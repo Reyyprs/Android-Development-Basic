@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.belajarandroidactivity.kalkulatorActivity">
+    
+    <ImageView
+        android:id="@+id/gambarKalkulator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calculator96"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Pintar Banget"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+    
+    <TextView
+        android:id="@+id/labelAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka 1 : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/inputAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:id="@+id/labelAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka 2 : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/inputAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka2"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#458147"
+            />
+
+        <Button
+            android:id="@+id/btnCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#C62828"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnCount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EF6C00"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#00838F"
+            />
+
+        <Button
+            android:id="@+id/btnCount5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#7B5195"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnCount6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#706761"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDCA6F"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/jawaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil : "
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/hasilJawaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="70dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+</LinearLayout>

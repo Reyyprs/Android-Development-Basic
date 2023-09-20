@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/kopi"
+    tools:context="com.example.belajarandroidactivity.HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngopi Yuk!"
+        android:textSize="40dp"
+        android:textColor="#814310"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="185sp"
+        android:layout_marginEnd="10sp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF821B"
+            android:text="Share"
+            app:icon="@drawable/baseline_share_24"
+            />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPindah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#814310"
+        android:text="Next"
+        app:icon="@drawable/baseline_keyboard_arrow_right_24"
+        app:iconSize="25dp"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>

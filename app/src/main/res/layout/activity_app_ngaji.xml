@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.belajarandroidactivity.AppNgajiActivity">
+
+    <ImageView
+        android:id="@+id/ivRectangle"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tvDoaDzikir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doa dan\nDzikir \nApp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivFotoDoa"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_doa1"
+        android:layout_toRightOf="@+id/tvDoaDzikir"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPilihanDoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan do'a dan\ndzikir"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/ivRectangle"
+        android:layout_marginStart="20dp"
+        android:textColor="#FF8F00"
+        />
+
+        <Button
+            android:id="@+id/btnSelengkapnya"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Selengkapnya"
+            android:textSize="15sp"
+            android:layout_below="@+id/ivRectangle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#938A8A"
+            />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/tvPilihanDoa"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
